@@ -1,7 +1,7 @@
 import express from 'express';
 import registerRoute from './routes/register.js';
-import loginRoute from './routes/login.js';
 import refreshRoute from './routes/refresh.js';
+import loginRoute from './routes/Login.js';
 
 const app = express();
 
