@@ -1,8 +1,10 @@
+import dotenv from "dotenv";
+dotenv.config(); // ไม่ต้องใส่ path
+
+import express from "express";
+// import routes / config ต่อจากนี้
 import { createClient } from '@supabase/supabase-js';
-import dotenv from 'dotenv';
 
-
-dotenv.config({ path: '../.env' });
 
 export const supabase = createClient(
   process.env.SUPABASE_URL,
