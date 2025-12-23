@@ -1,6 +1,5 @@
 import express from 'express';
 import cors from 'cors';
-
 import registerRoute from './routes/register.js';
 import loginRoute from './routes/login.js';
 import refreshRoute from './routes/refresh.js';
