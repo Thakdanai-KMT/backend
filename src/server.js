@@ -8,7 +8,7 @@ import refreshRoute from './routes/refresh.js';
 const app = express();
 
 app.use(cors({
-  origin: ['https://your-angular.vercel.app'],
+  origin: ['https://pos-app-two-tau.vercel.app/'],
   credentials: true
 }));
 
