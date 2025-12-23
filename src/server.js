@@ -8,11 +8,10 @@ import refreshRoute from './routes/refresh.js';
 const app = express();
 
 app.use(cors({
-  origin: ['https://pos-app-two-tau.vercel.app/'],
-  credentials: true
+  origin: 'https://pos-app-two-tau.vercel.app',
+  methods: ['GET','POST','PUT','DELETE','OPTIONS'],
+  allowedHeaders: ['Content-Type','Authorization']
 }));
-
-app.use(express.json());
 
 app.use('/api/auth/register', registerRoute);
 app.use('/api/auth/login', loginRoute);
